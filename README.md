@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Kanika Singh — Personal Portfolio
 
 A responsive, recruiter-ready personal portfolio website built for the **Future Interns
@@ -174,3 +175,6 @@ git push -u origin main
 - [ ] Push the final code to GitHub
 - [ ] Deploy to Vercel and confirm the live URL works
 - [ ] Add the live URL and GitHub repo link to your Future Interns submission
+=======
+# FUTURE_FS_01
+>>>>>>> 101f8ee20f13c8aa2a598e36c6ab2b9929846444
