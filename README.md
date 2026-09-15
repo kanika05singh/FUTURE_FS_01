@@ -105,37 +105,6 @@ This outputs a production-ready build to `dist/`. Preview it locally with:
 ```bash
 npm run preview
 ```
-
-## Customize your information
-
-Every piece of personal content lives in **`src/data/portfolioData.js`** — you should
-not need to touch any component file just to update copy. Look for lines marked
-`// TODO` and anything in `[brackets]`:
-
-| What to update | Where |
-|---|---|
-| Email, GitHub URL, LinkedIn URL | `personalInfo` object |
-| Resume file | Add `resume.pdf` to `/public`, matches `personalInfo.resumeUrl` |
-| Hero intro text | `heroContent.intro` |
-| About paragraphs | `aboutContent.paragraphs` |
-| Skills | `skillCategories` |
-| Projects (title, description, tech, links) | `projects` array — replace the
-  `[PROJECT TITLE]` placeholders with your own work |
-| College, university, year, coursework | `educationInfo` |
-| Internship details | `experienceInfo` |
-
-Until you replace a project's GitHub/Live Demo links, those buttons render disabled
-(not broken links) so nothing on the live site points nowhere.
-
-### Connecting the contact form to a real backend
-
-The form in `src/components/Contact.jsx` validates input and is ready to send — open
-the `handleSubmit` function and uncomment **one** of the three commented options:
-
-- **EmailJS** — client-side email sending, no backend needed
-- **Formspree** — POST to a Formspree endpoint, no backend needed
-- **Custom Node.js/Express API** — POST to your own `/api/contact` route
-
 ## Deployment (Vercel)
 
 1. Push this project to a GitHub repository (see below).
@@ -159,22 +128,5 @@ git remote add origin https://github.com/YOUR-USERNAME/kanika-portfolio.git
 git push -u origin main
 ```
 
-## Future Interns Task 1 — submission checklist
-
-- [ ] Replace all placeholder text in `src/data/portfolioData.js` (email, GitHub,
-      LinkedIn, resume, college/university/year, at least 2–3 more real projects)
-- [ ] Add a real `resume.pdf` to `/public`
-- [ ] Run `npm run build` one more time locally and confirm it completes with no errors
-- [ ] Click through every navbar link (desktop **and** the mobile hamburger menu) and
-      confirm each scrolls to the right section
-- [ ] Toggle dark/light mode and check all sections in both themes
-- [ ] Submit the contact form with empty fields to confirm validation messages appear,
-      then with valid input to confirm the success message shows
-- [ ] Resize the browser (or use dev tools' device toolbar) to check mobile, tablet,
-      and desktop breakpoints
-- [ ] Push the final code to GitHub
-- [ ] Deploy to Vercel and confirm the live URL works
-- [ ] Add the live URL and GitHub repo link to your Future Interns submission
 =======
 # FUTURE_FS_01
->>>>>>> 101f8ee20f13c8aa2a598e36c6ab2b9929846444
